@@ -5,7 +5,7 @@ import sendlogo from "../images/send.png";
 import Message from "../main page/Message";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 import closeIcon from "../images/closeIcon.png";
-import {user} from "../main page/Home"
+import { user } from "../main page/Home"
 
 let socket;
 
@@ -13,7 +13,7 @@ const ENDPOINT = "http://localhost:4500/";
 
 const Chat = () => {
 
-  const [id, setid] = useState("");
+    const [id, setid] = useState("");
     const [messages, setMessages] = useState([])
 
     const send = () => {
@@ -67,11 +67,11 @@ const Chat = () => {
 
 
 
-  return (
-    <div className="chatPage">
+    return (
+        <div className="chatPage">
             <div className="chatContainer">
                 <div className="header">
-                    <h2>FireBond</h2>
+                    <h2>OneToOne</h2>
                     <a href="/"> <img src={closeIcon} alt="Close" /></a>
                 </div>
                 <ReactScrollToBottom className="chatBox">
@@ -84,7 +84,7 @@ const Chat = () => {
             </div>
 
         </div>
-  )
+    )
 }
 
 export default Chat
